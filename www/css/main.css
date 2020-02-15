@@ -1,0 +1,16 @@
+body, html {
+
+	background:#000000;
+	background-size:cover;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+
+#titleText {
+
+	position:relative;
+	font-family:sans;
+	font-size:32px;
+	font-weight:bold;
+	color:#ffffff;
+}
