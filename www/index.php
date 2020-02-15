@@ -7,11 +7,11 @@
 <?php echo $xtitle; ?>
 </title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
-<script type="text/javascript" src="js/index.js"
+<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 
-<font id="titleText"><?php echo $xtitle; ?></font>
+<font id="titleText">Welcome to ATLAS..</font>
 
 </body>
 </html>
