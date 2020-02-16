@@ -3,6 +3,6 @@ function reLoad(xvar) {
 	setTimeout(function(){location.reload();}, xvar);
 }
 
-addEventListener('load', reLoad(30000));
+addEventListener('load', reLoad(300000));
 
 

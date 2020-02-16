@@ -1,8 +1,9 @@
 body, html {
 
-	background:#000000;
+	background:url(../img/bg.png), #ffffff;
 	background-size:cover;
 	background-repeat:no-repeat;
+	cursor:url(../img/aim.cur), auto;
 	overflow:hidden;
 }
 
@@ -12,11 +13,154 @@ body, html {
 	src:url(../fonts/pixel.ttf);
 }
 
-#titleText {
+@keyframes fadeIn {
+
+	0% {
+		opacity:0.0;
+	}
+
+	100% {
+		opacity:0.8;
+	}
+}
+
+@keyframes blink {
+
+	0% {
+		opacity:0.0;
+	}
+
+	100% {
+		opacity:1.0;
+	}
+}
+
+.devTool {
 
 	position:relative;
+	padding:6px 0px;
+	width:82px;
+	height:82px;
+	opacity:0.8;
+}
+
+.devTool:hover {
+
+	position:relative;
+	padding:6px 0px;
+	width:82px;
+	height:82px;
+	opacity:1.0;
+}
+
+#htmlButton {
+
+	content:url(../img/html.png);
+	animation-name:fadeIn;
+	animation-duration:2s;
+	animation-iteration-count:1;
+}
+
+#htmlButton:hover {
+
+	content:url(../img/html.png);
+}
+
+#cssButton {
+
+	content:url(../img/css.png);
+	animation-name:fadeIn;
+	animation-duration:2s;
+	animation-iteration-count:1;
+}
+
+#cssButton:hover {
+
+	content:url(../img/css.png);
+}
+
+#jsButton {
+
+	content:url(../img/js.png);
+	animation-name:fadeIn;
+	animation-duration:2s;
+	animation-iteration-count:1;
+}
+
+#jsButton:hover {
+
+	content:url(../img/js.png);
+}
+
+#signature {
+
+	content:url(../img/signWHITE.png);
+	position:absolute;
+	bottom:-3px;
+	right:10px;
+	width:15%;
+	opacity:0.8;
+}
+
+#signature:hover {
+
+	content:url(../img/signWHITE.png);
+	position:absolute;
+	bottom:-3px;
+	right:10px;
+	width:15%;
+	opacity:1.0;
+}
+
+#webNoteOn {
+
+	position:absolute;
+	top:15px;
+	right:17px;
 	font-family:pixel;
-	font-size:24px;
-	font-weight:regular;
-	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	color:#1aff1a;
+}
+
+#webNoteOn:hover {
+
+	position:absolute;
+	top:15px;
+	right:17px;
+	font-family:pixel;
+	font-size:16px;
+	font-weight:bold;
+	color:#1aff1a;
+
+	animation-name:blink;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+}
+
+
+#webNoteOff {
+
+	position:absolute;
+	top:15px;
+	right:17px;
+	font-family:pixel;
+	font-size:16px;
+	font-weight:bold;
+	color:#ff3333;
+}
+
+#webNoteOff:hover {
+
+	position:absolute;
+	top:15px;
+	right:17px;
+	font-family:pixel;
+	font-size:16px;
+	font-weight:bold;
+	color:#ff3333;
+
+	animation-name:blink;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
 }

@@ -11,6 +11,7 @@ def upDate(xvar):
 def runHOST(self):
 
 	import os
+	os.system('START /B chlink')
 	XCOM = str('START /B http://localhost:8888')
 	YCOM = str('START /B php -S localhost:8888 -t "C:/Users/%USERNAME%/Desktop/atlas/www"')
 	os.system(XCOM)
