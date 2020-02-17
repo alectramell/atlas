@@ -104,11 +104,11 @@ body, html {
 
 #signature:hover {
 
-	content:url(../img/signWHITE.png);
+	content:url(../img/emblemWHITE.png);
 	position:absolute;
-	bottom:-20px;
-	left:5px;
-	width:25%;
+	bottom:-3px;
+	left:-10px;
+	width:10%;
 	opacity:1.0;
 
 	animation-name:blink;
@@ -151,7 +151,8 @@ body, html {
 	font-family:pixel;
 	font-size:16px;
 	font-weight:bold;
-	color:#ff3333;
+	color:#4c4c4c;
+	opacity:0.8;
 }
 
 #webNoteOff:hover {
@@ -162,7 +163,7 @@ body, html {
 	font-family:pixel;
 	font-size:16px;
 	font-weight:bold;
-	color:#ff3333;
+	color:#4c4c4c;
 
 	animation-name:blink;
 	animation-duration:1s;

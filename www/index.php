@@ -5,12 +5,12 @@
 
 	if ( $xweb == 1 ) {
 
-		$xConnect = '<font id="webNoteOn" class="webNote">(( www ))</font>';
+		$xConnect = '<font id="webNoteOn" class="webNote" title="You are Connected to the Internet!">(( LIVE ))</font>';
 		$netAccess = '	addEventListener("click", openURL);';
 
 	} else {
 
-		$xConnect = '<font id="webNoteOff" class="webNote">-- www --</font>';
+		$xConnect = '<font id="webNoteOff" class="webNote" title="You are Not Connected to the Internet..">(( LIVE ))</font>';
 		$netAccess = '	// VOID';
 	}
 ?>
