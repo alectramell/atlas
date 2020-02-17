@@ -5,11 +5,13 @@
 
 	if ( $xweb == 1 ) {
 
-		$xConnect = '<font id="webNoteOn">(( www ))</font>';
+		$xConnect = '<font id="webNoteOn" class="webNote">(( www ))</font>';
+		$netAccess = '	addEventListener("click", openURL);';
 
 	} else {
 
-		$xConnect = '<font id="webNoteOff">-- www --</font>';
+		$xConnect = '<font id="webNoteOff" class="webNote">-- www --</font>';
+		$netAccess = '	// VOID';
 	}
 ?>
 <html>
@@ -21,6 +23,11 @@
 <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
+
+<script>
+<?php echo $netAccess; ?>
+
+</script>
 
 <img id="htmlButton" class="devTool" src="img/html.png">
 <img id="jsButton" class="devTool" src="img/js.png">
