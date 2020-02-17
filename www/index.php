@@ -35,6 +35,8 @@
 
 <?php echo $xConnect; ?>
 
+<font id="facebookLink" title="Share ATLAS on Facebook..">facebook</font>
+
 <img id="signature">
 
 </body>
