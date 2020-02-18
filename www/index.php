@@ -1,17 +1,19 @@
 <?php
 	$xtitle = 'ATLAS v1.0';
 
+	$netAccess = '<script></script>';
+
 	$xweb = file_get_contents('status.txt');
 
 	if ( $xweb == 1 ) {
 
 		$xConnect = '<font id="webNoteOn" class="webNote" title="You are Connected to the Internet!">(( LIVE ))</font>';
-		$netAccess = '	addEventListener("click", openURL);';
-
+		$netAccess = '<script type="text/javascript">document.addEventListener("click", openURL);</script>';
+		
 	} else {
 
 		$xConnect = '<font id="webNoteOff" class="webNote" title="You are Not Connected to the Internet..">(( LIVE ))</font>';
-		$netAccess = '	// VOID';
+		$netAccess = '<script type="text/javascript"></script>';
 	}
 ?>
 <html>
@@ -24,10 +26,7 @@
 </head>
 <body>
 
-<script>
 <?php echo $netAccess; ?>
-
-</script>
 
 <img id="htmlButton" class="devTool" src="img/html.png">
 <img id="jsButton" class="devTool" src="img/js.png">
